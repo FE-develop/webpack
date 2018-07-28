@@ -1,0 +1,21 @@
+{
+  "name": "hello-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack": "4.16.3",
+    "webpack-cli": "3.1.0"
+  },
+  "scripts": {
+    "predev": "rimraf dist_dev",
+    "dev": "webpack --mode=development",
+    "prebuild": "rimraf dist",
+    "build": "webpack --mode=production",
+    "clean": "rimraf dist*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
