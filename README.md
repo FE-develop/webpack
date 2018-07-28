@@ -25,15 +25,15 @@
 
 3. 运行过程中有时候还有有个warning, 需呀添加--mode设置。在配置运行脚本的时候添加`--mode=development`或`--mode=production`即。
 
-  ```javascript
-  // package.json
-  {
-    "scripts": {
-      "dev": "webpack --mode=development",
-      "build": "webpack --mode=production",
-    },
-  }
-  ```
+    ```javascript
+    // package.json
+    {
+      "scripts": {
+        "dev": "webpack --mode=development",
+        "build": "webpack --mode=production",
+      },
+    }
+    ```
 
 ## 四个核心概念
 
@@ -45,9 +45,7 @@
 示例
 
 + [hello-webpack](./case/hello-webpack/READEME.md)
++ [webpack-loader](./case/loader/READEME.md)
 
-
-
-[npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
-
-[Webpack 4 不完全迁移指北](https://github.com/dwqs/blog/issues/60)
+1. [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
+2. [Webpack 4 不完全迁移指北](https://github.com/dwqs/blog/issues/60)

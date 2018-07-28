@@ -1,5 +1,52 @@
 # hello webpack
 
+主要有入口、出口、loader、插件几个主要部分。
+
+entry的几种写法：
+
+单个入口（简写）语法
+
+```javascript
+const config = {
+  entry: './src/app.js'
+};
+/* 上面的是简写，下面的是完整写法
+  const config = {
+    entry: {
+      main: './path/to/my/entry/file.js'
+    }
+  };
+ */
+module.exports = config;
+```
+
+entry 对象语法：`entry: {[entryChunkName: string]: string|Array<string>}`
+
+这种方式通常用于 **分离 应用程序(app) 和 第三方库(vendor) 入口**
+
+```javascript
+const config = {
+  entry: {
+    app: './src/app.js',
+    vendors: './src/vendors.js'
+  }
+};
+module.exports = config;
+```
+
+多页面应用
+
+```javascript
+const config = {
+  entry: {
+    pageOne: './src/pageOne/index.js',
+    pageTwo: './src/pageTwo/index.js',
+    pageThree: './src/pageThree/index.js'
+  }
+};
+module.exports = config;
+```
+
 ```json
 {
   "scripts": {
