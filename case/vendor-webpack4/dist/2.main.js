@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{2:function(o,n,w){w(0),w(1);o.exports=function(){console.log("hello world")}}},[[2,1,0]]]);
