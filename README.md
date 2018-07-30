@@ -47,5 +47,45 @@
 + [hello-webpack](./case/hello-webpack/READEME.md)
 + [webpack-loader](./case/loader/READEME.md)
 
+### entry的几种写法
+
+```javascript
+module.exports = {
+  entry: './src/app.js',
+  // ...
+}
+
+module.exports = {
+  entry: {
+    main: './src/app.js'
+  },
+  // ...
+}
+
+// 多页面
+module.exports = {
+  entry: {
+    pageOne: './src/pageOne/index.js',
+    pageTwo: './src/pageTwo/index.js',
+    pageThree: './src/pageThree/index.js'
+  },
+  // ...
+}
+
+// vendor
+module.exports = {
+  entry: {
+    app: './src/app.js',
+    vendor: ['underscore']
+  },
+  // ...
+}
+```
+
+### vendor设置在webpack3 webpack4中设置不同
+
+参考[实例3](./case/vendor-webpack3/READEME.md)和[实例4](./case/vendor-webpack4/READEME.md)
+
+
 1. [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 2. [Webpack 4 不完全迁移指北](https://github.com/dwqs/blog/issues/60)
