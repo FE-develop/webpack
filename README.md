@@ -86,6 +86,9 @@ module.exports = {
 
 参考[实例3](./case/vendor-webpack3/READEME.md)和[实例4](./case/vendor-webpack4/READEME.md)
 
+### extract-text-webpack-plugin
+
+参考[实例styles-webpack3](./case/styles-webpack3/READEME.md)
 
 1. [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 2. [Webpack 4 不完全迁移指北](https://github.com/dwqs/blog/issues/60)

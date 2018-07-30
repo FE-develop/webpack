@@ -1,0 +1,25 @@
+{
+  "name": "styles-webpack3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "9.0.1",
+    "css-loader": "1.0.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "postcss-loader": "2.1.6",
+    "rimraf": "2.6.2",
+    "style-loader": "0.21.0",
+    "webpack": "3.12.0"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist && mkdir dist",
+    "build:extract": "npm run clean && webpack --config webpack.extract.config.js",
+    "build:autoprefix": "npm run clean && webpack --config webpack.autofrefix.config.js",
+    "build:styles": "npm run clean && webpack --config webpack.styles.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
